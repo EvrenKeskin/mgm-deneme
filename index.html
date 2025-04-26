@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megumi Clinic Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h1 style="font-family: Trebuchet MS, sans-serif;position: static; font-size: 35px; font-weight: bold; text-align: left; margin: 0; display: inline-block; background: lightpink; border-radius: 5px; padding: 3px;">Megumi
+    </h1>
+
+    <span style="font-family: Trebuchet MS, sans-serif; font-size: 12px; color: gray; margin-left: 1px;">net fiyat, kolay süreç, doğru klinik
+    </span>
+
+    <header style="display: inline-block; margin-left: 700px; position: static;">
+  <nav>
+    <a href="https://twitter.com/yourhandle" target="_blank">Instagram</a>
+    <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+  </nav>
+</header>
+
+    <hr style="width: 330px; margin-left: 0px; margin-top: 2px;">
+
+    
+        
+    <h2>Klinikler <span style="font-weight: normal;">(Aliağa)</span></h2>
+    <input type="text" id="searchBar" placeholder="Klinik ara..." onkeyup="searchTable()">
+
+    <table id="myTable">
+        <tr>
+            <th>Tedavi Merkezi</th>
+            <th>Tip</th>
+            <th style="width: 60px;">Genel <br> Puan <span style="font-size:10px;"> <br> (Google) </span> </th>
+            <th style="width: 60px;">Tedavi</th>
+            <th style="width: 60px;">Tedavi Sonrası <br>Memnuniyet <span style="font-size:10px;"> (15 Gün) </span> </th>
+            <th style="width: 60px;">Hizmet <br> Kalitesi <span style="font-size:10px;"> <br> (15 Gün) </span> </th>
+            <th>Konum</th>
+            <th style="width: 100px;"> Muayene Fiyat</th>
+            <!-- <th>Avantajlar</th> -->
+            <!--<th>HbH
+                <span style="font-size: 0.8em; color: gray; margin-left: 1px;">Hasta Başına Hemşire</span>
+            </th> -->
+        </tr>
+ 
+    </table>
+
+    <!-- Modal Popup -->
+
+    <div id="modal" class="modal">
+
+    <div style="position: relative; padding: 10px;">
+        <span class="close-btn" onclick="closeModal()" style="cursor: pointer; font-size: 24px; position: absolute; top: -3px; right: -4px;">&times;</span>
+        <div id="modal-content"></div>
+    </div>
+
+
+        <div style="margin-bottom: 50px;">
+        <!-- Your content here -->
+        </div>
+    </div>
+    
+    <!-- Overlay Background -->
+    <div id="overlay" class="overlay" onclick="closeModal()"></div>
+
+    <div style="margin-bottom: 50px;">
+        </div>
+
+    <script src="diseases.js"></script>
+    <script src="clinics.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- <h1 style="font-family: Trebuchet MS, sans-serif;position: static; font-size: 35px; font-weight: bold; text-align: left; margin: 0; display: inline-block; ">Megumi</h1>
+<p style="font-family: Trebuchet MS, sans-serif; font-size: 15px; color: #666; position: static; bottom: 0; right: 0; margin: 0;">kolay tedavi, doğru klinik</p> -->
